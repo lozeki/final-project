@@ -19,7 +19,7 @@ Create the Project
 
    $ git commit -m "Create the repo for final project"
 
-7. Connect your repo to github ( you can copy the remote repository URL from your github setup page).
+7. Connect your repository to github ( you can copy the remote repository URL from your github setup page).
 
    $ git remote add origin https://github.com/lozeki/final-project.git
 

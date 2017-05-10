@@ -1,0 +1,5 @@
+---
+# Here we define variables in a key: value setting
+# that will be used in the unh698 role.
+final_web_image: lozeki/final-project
+final_web_command: python3 /src/final_web.py

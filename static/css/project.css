@@ -1,0 +1,138 @@
+/* CSS for COMP698 Final Project */
+/* For older, non-HTML5 browsers */
+header, section, side, footer {
+	display: block;
+}
+
+
+body{
+font-family: Lato, arial;
+}
+#container{
+max-width:960px;
+margin:0px auto;
+}
+#header{
+width:960px;
+height:260px;
+background-color:#f1f1f1;   
+}
+#navigation{
+text-transform: uppercase;
+margin: -2px 0px 0px 0px;
+}
+#navigation ul
+{
+	list-style:none;
+	position:relative;
+	float:left;
+	margin:0;
+	padding:0
+}
+#navigation ul a {
+display:block;
+color:#2495b5;
+font-weight:bold;
+text-decoration:none;
+}
+#navigation ul a:hover{
+color:#5ec8b4;
+}
+
+#navigation ul li{  
+position:relative;
+float:left;
+margin-left:-4px;
+background-color:#f1f1f1;
+padding: 10px 10px 10px 10px;
+}
+#navigation ul li:hover  ul{
+	
+display:block;
+}
+
+
+#main{
+float:left;
+width:700px;
+}
+#side{
+float:right;
+width:260px;
+}
+#side p{
+padding:0px 10px 0px 10px;
+}
+#addon{
+background-color:#f1f1f1;	
+}
+h2{
+color:#2495b5;
+}
+h3{
+color:#2d5753;	
+}
+a{
+text-decoration:none;	
+}
+p{
+	
+}
+.link {
+color:#2495b5;
+text-decoration:none;
+}
+.link:hover{
+color:red;
+}
+.text{
+color:#3E3E3E;	
+}
+.home{
+color:#736A49;	
+}
+.home:hover{
+color:orange;	
+}
+.none tr, .none td{
+border: 0px ;	
+}
+/* CSS for gallery */
+
+#gallery ol{
+	margin-left: -30px;
+	
+}
+
+#gallery ol li{
+	float:left;
+	display:inline;
+	margin-right:20px;
+	margin-bottom:20px;
+	list-style:none;
+	
+}
+
+
+#gallery ol li a:hover{
+	color:blue;
+}
+#gallery ol li a img{
+	width:200px;
+}
+
+
+
+#footer{
+clear:both;
+text-align:center;
+padding-top:5px;
+height:100px;
+background: url(../static/images/footer.png) center no-repeat;
+background-color:#f1f1f1;
+font-size:0.8em;
+}
+#footer h5{
+margin-top:30px;
+margin-bottom:10px;	
+}

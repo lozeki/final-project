@@ -6,7 +6,7 @@
   become: true
   vars:
     final_web_environment: staging
-    final_web_image_version: release-0.0.1
+    final_web_image_version: release-0.2.0
     final_web_host_port: 8081
     final_web_container_port: 5000
   roles:

@@ -118,17 +118,15 @@ border: 0px ;
 	color:blue;
 }
 #gallery ol li a img{
-	width:200px;
+	width:300px;
 }
-
-
 
 #footer{
 clear:both;
 text-align:center;
 padding-top:5px;
 height:100px;
-background: url(../static/images/footer.png) center no-repeat;
+background: url(../images/footer.png) center no-repeat;
 background-color:#f1f1f1;
 font-size:0.8em;
 }

@@ -20,7 +20,14 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 * changelog.md
 * Add the tag 0.0.1
 
-## Version 0.0.2
+## Version 0.2.0
 
 * Add main.html
 * Add css and images
+
+## Version 0.3.0
+
+* Add practice.html
+* Change the final_web.py and final_web_test.py to test the new page
+
+

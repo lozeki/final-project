@@ -8,7 +8,7 @@ def home():
     return render_template('main.html')
 
 @app.route('/practice')
-def home():
+def template():
 
     return render_template('practice.html')
 

@@ -16,6 +16,12 @@ class FlaskrTestCase(unittest.TestCase):
         rv = self.app.get('/')
         # Chech that the page contians the desired phrase
         assert b'Final Project Website' in rv.data 
+    
+    def test_my_topic(self):
+        # Replace '/' with the page path you want to make
+        rv = self.app.get('/practice')  
+        # Replace UNH698 Website with the text you expect to see on you topi$
+        assert b'YOGA PRACTICE' in rv.data 
 
 if __name__ == '__main__':
     unittest.main()

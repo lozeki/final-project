@@ -23,7 +23,7 @@ class FlaskrTestCase(unittest.TestCase):
         # Replace UNH698 Website with the text you expect to see on you topi$
         assert b'YOGA PRACTICE' in rv.data 
 
- def test_poses(self):
+    def test_poses(self):
         # Replace '/' with the page path you want to make
         rv = self.app.get('/poses')  
         # Replace UNH698 Website with the text you expect to see on you topi$

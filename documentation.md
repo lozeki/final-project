@@ -42,9 +42,7 @@
 ..* Source - /^[0-9.]+$/
 ..* Docker Tag - release-{sourceref}
 
-### Prepare Dockerfile, YAML files, an others to run the image.
-
-#### They are using for configuration files, blueprints, and also in page settings. 
+### Prepare Dockerfile, YML, an other files to run the image.
 
 1. Build a Dockerfile to install the software we need on the server.
 

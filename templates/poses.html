@@ -1,0 +1,73 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Tittle -->
+<title>COMP698 Final Project Website</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/project.css') }}">
+</head>
+<body>
+<!-- Block for the whole page -->
+<div id="container">
+<div id="header">  <!-- Logo and Heading block -->
+<a href="/"><img src="/static/images/banner.jpg" alt="the banner" width="960" height="220"> </a> <!-- Logo image -->
+
+<div id="navigation">
+<ul>
+    <li><a href="/">HOME</a></li>
+    <li><a href="/practice">PRACTICE</a></li>	
+    <li><a href="/poses">POSES</a></li>
+	<li><a href="/about">ABOUT</a></li>
+</ul>
+
+</div>  <!-- Close of navigation-->
+</div> <!--- close Logo and Heading -->
+
+
+<div id="main">
+
+<h2> YOGA POSES</h2>
+
+<div id="gallery">
+			<p> Browse our extensive yoga pose library, with a vast collection of everything from basic to advanced poses, seated and standing poses, twists, challenge poses, and bandha techniques.
+			</p>
+				<ol>
+					<li><a href="/static/images/yoga01_big.jpg" class="link" target="blank"><img src="/static/images/yoga01.jpg" alt="Wheel Pose" /> <br> Upward Bow (Wheel) Pose</a></li>
+					<li><a href="/static/images/yoga02_big.jpg" class="link" target="blank"><img src="/static/images/yoga02.jpg" alt="Bridge Pose" /><br>Bridge Pose</a> </li>
+					<li><a href="/static/images/yoga03_big.jpg" class="link" target="blank"><img src="/static/images/yoga03.jpg" alt="Nadi Shodhana Pranayama" /><br>Nadi Shodhana Pranayama</a> </li>
+					<li><a href="/static/images/yoga04_big.jpg" class="link" target="blank"><img src="/static/images/yoga04.jpg" alt="Twist Yoga Poses" /><br>Twist Yoga Poses</a> </li>
+					<li><a href="/static/images/yoga05_big.jpg" class="link" target="blank"><img src="/static/images/yoga05.jpg" alt="Upward Facing Dog Pose" /><br>Upward Facing Dog Pose</a> </li>
+								
+				</ol>
+				
+</div>	<!-- close gallery -->
+
+</div>	<!-- close main -->
+		
+<div id="side">
+
+<h2>YOGA POSES</h2>
+
+<img src="/static/images/side.jpg" alt="side" width="260" height="496">
+
+<p>You can browse our extensive yoga  <a href="/poses" class="link">pose library</a>
+</p>
+
+</div>  <!-- close side -->
+
+
+
+<div id="footer">
+<h5> Modified by "Tri Nguyen"  
+&copy; Copyright 2016 <a class="link" href="mailto:minhtri.ng@gmail.com" target="_top">minhtri.ng@gmail.com</a> build for COMP698 Final Project<!-- email and contact-->
+</h5>
+
+<script language="javascript">
+<!-- Hide from old browsers
+    document.write("<cite>This document was last modified "+document.lastModified+"</cite>")
+// -->
+</script>
+</div> <!--- close footer -->
+</div><!--- close of the container -->
+</body>
+</html>

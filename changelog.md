@@ -22,10 +22,24 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 
 * Add main.html
 * Add css and images
+* Change the final_web.py and final_web_test.py to test the new page.
+* Change the version of staging and production.
 
 ## Version 0.3.0
 
 * Add practice.html
-* Change the final_web.py and final_web_test.py to test the new page
+* Change the final_web.py and final_web_test.py to test the new page.
+* Change the version of staging and production.
+
+## Version 0.3.1
+
+* Remove intruction step 1 : 1-bash-git-and-github.md
+* Add documentation.md
+
+## Version 0.4.0
+
+* Add poses.html
+* Add test function to the new page.
+* Change the version of staging and production.
 
 

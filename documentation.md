@@ -136,3 +136,65 @@ ansible-playbook deploy-website-production.yml -v
 
 ansible-playbook deploy-website-staging.yml -v
 ```
+### Use Prometheus to monitor the Python flask server
+
+#### Prometheus is a great metrics monitoring system. We'll used it to monitor some system level metrics such as CPU and Memory utilization along with some application level metrics such as number of page loads and page load time.
+..* Use Dockerfile to install prometheus library
+```
+pip3 install prometheus_client
+```
+..* Create the monitor program prometheus_metrics.py in the same place as our main code final_web.py.
+```
+import time
+from flask import request
+from flask import Response
+from prometheus_client import Summary, Counter, Histogram
+from prometheus_client.exposition import generate_latest
+from prometheus_client.core import  CollectorRegistry
+from prometheus_client.multiprocess import MultiProcessCollector
+
+_INF = float("inf")
+# Create a metric to track time spent and requests made.
+REQUEST_TIME = Histogram(
+    'app:request_processing_seconds', 
+    'Time spent processing request',
+    ['method', 'endpoint'],
+    buckets=tuple([0.0001, 0.001, .01, .1, 1, _INF])
+)
+REQUEST_COUNTER = Counter(
+    'app:request_count', 
+    'Total count of requests', 
+    ['method', 'endpoint', 'http_status']
+)
+
+
+def setup_metrics(app):
+    @app.before_request
+    def before_request():
+        request.start_time = time.time()
+
+    @app.after_request
+    def increment_request_count(response):
+        request_latency = time.time() - request.start_time
+        REQUEST_TIME.labels(request.method, request.path
+            ).observe(request_latency)
+
+        REQUEST_COUNTER.labels(request.method, request.path,
+                response.status_code).inc()
+        return response
+
+    @app.route('/metrics')
+    def metrics():
+        return Response(generate_latest(), mimetype="text/plain")
+```
+..* Import setup_metrics into the Python code final_web.py 
+```
+from prometheus_metrics import setup_metrics
+setup_metrics(app)
+```
+..* Push everything to the remote repository on github
+
+..* run the test with command
+```
+curl 54.183.61.188:8081/metrics
+```

@@ -53,6 +53,12 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 * Update version of production and staging
 * Update the test and main function
 
+## Version 0.5.1
 
+* Edit some images, change the information of poses.html
+
+## Version 0.6.0
+
+* Add Prometheus to monitor the Python flask server
 
 

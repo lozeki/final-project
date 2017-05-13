@@ -28,6 +28,12 @@ class FlaskrTestCase(unittest.TestCase):
         rv = self.app.get('/poses')  
         # Replace UNH698 Website with the text you expect to see on you topi$
         assert b'bandha techniques' in rv.data 
+    
+    def test_about(self):
+        # Replace '/' with the page path you want to make
+        rv = self.app.get('/about')  
+        # Replace UNH698 Website with the text you expect to see on you topi$
+        assert b'Amazon Web Services' in rv.data 
 
 if __name__ == '__main__':
     unittest.main()

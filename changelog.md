@@ -42,4 +42,17 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 * Add test function to the new page.
 * Change the version of staging and production.
 
+## Version 0.4.1
+
+* Fix the links on the main.html
+* Update some images
+
+## Version 0.5.0
+
+* Add about.html
+* Update version of production and staging
+* Update the test and main function
+
+
+
 

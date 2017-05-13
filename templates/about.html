@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- Tittle -->
+<title>COMP698 Final Project Website</title>
+<meta charset="utf-8">
+<link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/project.css') }}">
+</head>
+<body>
+<!-- Block for the whole page -->
+<div id="container">
+<div id="header">  <!-- Logo and Heading block -->
+<a href="/"><img src="/static/images/banner.jpg" alt="the banner" width="960" height="220"> </a> <!-- Logo image -->
+
+<div id="navigation">
+<ul>
+    <li><a href="/">HOME</a></li>
+    <li><a href="/practice">PRACTICE</a></li>	
+    <li><a href="/poses">POSES</a></li>
+	<li><a href="/about">ABOUT</a></li>
+</ul>
+
+</div>  <!-- Close of navigation-->
+</div> <!--- close Logo and Heading -->
+
+
+<div id="main">
+
+<h2> HOME</h2>
+<h3>ABOUT THIS PAGES</h3>
+<p>
+This is a webpages that created for class COMP698's Final Project. It was created with the help of:
+	<ul>
+		<li>GitHub</li>
+		<li>Docker Cloud</li>
+		<li>Amazon Web Services</li>
+	</ul>
+</p>
+<p>
+It is just a simple page without database and scripts. I drew and designed all the pictures for this page.
+</p>
+</div> <!--- close main page -->
+
+<div id="side">
+
+<h2>YOGA POSES</h2>
+
+<img src="/static/images/side1.jpg" alt="side" width="260" height="496">
+
+<p>You can browse our extensive yoga <a href="/poses" class="link">pose library</a>
+</p>
+
+</div>  <!-- close side -->
+
+<div id="footer">
+<h5> Modified by "Tri Nguyen"  
+&copy; Copyright 2016 <a class="link" href="mailto:minhtri.ng@gmail.com" target="_top">minhtri.ng@gmail.com</a> build for COMP698 Final Project<!-- email and contact-->
+</h5>
+
+<script language="javascript">
+<!-- Hide from old browsers
+    document.write("<cite>This document was last modified "+document.lastModified+"</cite>")
+// -->
+</script>
+</div> <!--- close footer -->
+</div><!--- close of the container -->
+</body>
+</html>

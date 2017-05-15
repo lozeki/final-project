@@ -61,4 +61,12 @@ The format is based on [Keep a Changelog](https://github.com/olivierlacan/keep-a
 
 * Add Prometheus to monitor the Python flask server
 
+## Version 0.6.1
+
+* Recreate prometheus_metrics.py, the version copy from windows didn't work
+
+## Version 0.6.2
+
+* Add links Github and Docker Cloud to about.html page
+
 

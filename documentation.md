@@ -73,7 +73,7 @@ sut:
 echo "Running Flask Unit Tests"
 python3 final_web_test.py
 ```
-4. Build the test function with control the test on the Flask webserver.
+4. Build the test function on final_web_test.py to control the test on the Flask webserver.
 ```
 import unittest
 import final_web
@@ -93,7 +93,7 @@ class FlaskrTestCase(unittest.TestCase):
 if __name__ == '__main__':
     unittest.main()
 ``` 
-5. Push your branch to your github, and start a pull request. The test will fail because we didn't write any code for final_web.py.
+5. Create final_web.py, then Push your branch to your github, and start a pull request. The test will fail because we didn't write any code for final_web.py.
 
 6. Build the The main program final_web.py which controls how the Flask website will run. Commit and push changes to the github branch. If the test passes, merge and submit a link to your pull request. If the test fails, redo it again. 
 ```
@@ -198,3 +198,4 @@ setup_metrics(app)
 ```
 curl 54.183.61.188:8081/metrics
 ```
+### The website use CSS and images from static folder, the default folder for addition files.
